@@ -1,7 +1,6 @@
 ﻿{
-  "version": 2,
-  "routes": [
-    { "src": "^/$", "dest": "/web/index.html" },
-    { "src": "^/(.*)$", "dest": "/web/$1" }
+  "rewrites": [
+    { "source": "/", "destination": "/web/index.html" },
+    { "source": "/:path*", "destination": "/web/:path*" }
   ]
 }
